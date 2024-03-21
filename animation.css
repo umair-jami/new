@@ -1,0 +1,76 @@
+/* .box{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: bg-color-change;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+}
+@keyframes bg-color-change{
+    from{
+        background: black;
+    }
+    to{
+        background: yellow;
+    }
+} */
+.box2{
+    width: 15px;
+    height: 10px;
+    background: red;
+    animation-name: length;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+}
+/* @keyframes length{
+    from{
+        width: 50px;
+    }
+    to{
+        width: 500px;
+    }
+} */
+.box3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    position: relative;
+    /* animation-name: circle;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in; */
+    animation: circle 1s ease-in-out 2s 5 normal forwards;
+}
+@keyframes circle{
+    0%{
+        top: 0;
+        left: 0;
+        background: lightblue;
+    }
+    25%{
+        top: 0;
+        left: 300px;
+        background: lightcyan;
+    }
+    50%{
+        top: 300px;
+        left: 300px;
+        background: lightgreen;
+    }
+    75%{
+        top: 300px;
+        left: 0;
+        background: lightslategray;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background: lightskyblue;
+    }
+}

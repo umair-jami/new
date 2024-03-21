@@ -1,0 +1,14 @@
+.box{
+    width: 500px;
+    height: 500px;
+    background: lightblue;
+    /* transition: background 1s ease-in-out,
+                width 1s ease-in-out,
+                height 1s ease-in; */
+    transition: all 1s ease-in;
+}
+.box:hover{
+    background: lightcoral;
+    width: 1000px;
+    height: 250px;
+}

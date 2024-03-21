@@ -1,0 +1,75 @@
+*html,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bakbak One', sans-serif;
+}
+.title{
+    text-align: center;
+    margin: 1rem auto;
+}
+.box{
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+}
+.box img{
+    display: inline-block;
+    width: 100%;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #23232323;
+    padding: 0.5em 1.2em;
+    transition: all 0.1s ease-in;
+}
+
+.btn:hover{
+    background: #232323;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.box-content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.4s ease-in;
+}
+
+.box-content h3{
+    font-size: 18px;
+}
+
+.box:hover .box-content{
+    opacity: 1;
+    top: 50%;
+}
+
+
+.box::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #232323c0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.2s ease-in;
+}
+.box:hover::after{
+    opacity: 1;
+}

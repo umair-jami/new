@@ -1,0 +1,24 @@
+.flex-wrape{
+    border: 10px solid black;
+    display: flex;
+    max-width: 1500px;
+}
+.box{
+    border: 1px solid green;
+    flex-grow: 1;
+}
+.box-1{
+    background: lightblue;
+}
+.box-2{
+    background: lightcoral;
+}
+.box-3{
+    background: lightpink;
+}
+.box-4{
+    background: lawngreen;
+}
+.box-5{
+    background: lightslategrey;
+}
